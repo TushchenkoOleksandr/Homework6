@@ -1,0 +1,80 @@
+﻿.about-us {
+    margin: 100px auto 0;
+    width: 1090px;
+
+    .about-us-body {
+        display: flex;
+        justify-content: space-between;
+
+        .about-us-body-left {
+            width: 560px;
+
+            h4 {
+                font-family: Playfair Display;
+                font-size: 21px;
+                line-height: 1.48;
+                letter-spacing: 0.84px;
+                text-align: left;
+                color: #111111;
+            }
+
+            ol {
+                flex-wrap: wrap-reverse;
+                flex-direction: row-reverse;
+                display: inline-flex;
+                counter-reset: year 2013;
+                list-style-position: outside;
+
+
+                li {
+                    margin-top: 35px;
+                    font-family: Open Sans;
+                    font-size: 16px;
+                    line-height: 1.31;
+                    letter-spacing: 0.64px;
+                    text-align: left;
+                    color: #111111;
+                }
+
+                li::before {
+                    display: inline-block;
+                    vertical-align: middle;
+                    float: left;
+                    margin-right: 48px;
+                    content: counter(year) '-';
+                    counter-increment: year;
+                    font-family: Open Sans;
+                    font-size: 21px;
+                    font-weight: bold;
+                    line-height: 1;
+                    letter-spacing: 0.84px;
+                    text-align: left;
+                    color: #111111;
+                }
+            }
+        }
+
+        .about-us-body-right {
+            width: 490px;
+
+            h4 {
+                margin-bottom: 35px;
+                font-family: Playfair Display;
+                font-size: 21px;
+                line-height: 1.48;
+                letter-spacing: 0.84px;
+                text-align: left;
+                color: #111111;
+            }
+
+            p {
+                font-family: Open Sans;
+                font-size: 14px;
+                line-height: 2.21;
+                letter-spacing: 0.56px;
+                text-align: left;
+                color: #666666;
+            }
+        }
+    }
+}

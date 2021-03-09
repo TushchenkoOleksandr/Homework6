@@ -5,7 +5,6 @@
   width: 100%;
   height: 110px;
   background-color: #ffffff;
-  border: 4px solid black;
 }
 .header .main-header {
   display: flex;
@@ -17,7 +16,7 @@
   width: 1170px;
 }
 .header .main-header h1 {
-  font-family: PlayfairDisplay;
+  font-family: Playfair Display;
   font-size: 25px;
   font-weight: bold;
   line-height: 1;
@@ -138,10 +137,167 @@ a {
   cursor: pointer;
 }
 
-ul {
+ul, ol {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+button {
+  border: 0;
+}
+
+button:active {
+  border: 0;
+}
+
+.welcome {
+  padding-top: 605px;
+  background-image: url(../img/welcome.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.welcome .welcome-box {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin: 0 auto;
+  width: 950px;
+}
+.welcome .welcome-box .welcome-name {
+  border-left: 3px solid #e8bf5d;
+  padding: 0 0 0 16px;
+  font-family: Playfair Display;
+}
+.welcome .welcome-box .welcome-name h2 {
+  font-family: Playfair Display;
+  font-size: 65px;
+  line-height: 1;
+  letter-spacing: 2.6px;
+  text-align: left;
+  color: #ffffff;
+}
+.welcome .welcome-box .welcome-name p {
+  font-family: Playfair Display;
+  font-size: 33px;
+  line-height: 1;
+  letter-spacing: 2.6px;
+  text-align: left;
+  color: #ffffff;
+}
+.welcome .welcome-box button {
+  position: relative;
+  top: 50%;
+  transform: translate(0, 50%);
+  padding: 0;
+  height: 50px;
+  width: 180px;
+  border-radius: 25px;
+  background-color: #e8bf5d;
+  font-family: Playfair Display;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.64px;
+  text-align: center;
+  color: #111111;
+}
+
+.about-us-header {
+  margin: 0 auto 70px;
+  padding: 0 0 0 19px;
+  border-left: 2px solid #e8bf5d;
+}
+.about-us-header h3 {
+  margin-bottom: 29px;
+  font-family: Playfair Display;
+  font-size: 31px;
+  line-height: 1;
+  letter-spacing: 1.24px;
+  text-align: left;
+  color: #111111;
+}
+.about-us-header p {
+  width: 762px;
+  font-family: Playfair Display;
+  font-size: 21px;
+  line-height: 1.48;
+  letter-spacing: 0.84px;
+  text-align: left;
+  color: #666666;
+}
+
+.about-us {
+  margin: 100px auto 0;
+  width: 1090px;
+}
+.about-us .about-us-body {
+  display: flex;
+  justify-content: space-between;
+}
+.about-us .about-us-body .about-us-body-left {
+  width: 560px;
+}
+.about-us .about-us-body .about-us-body-left h4 {
+  font-family: Playfair Display;
+  font-size: 21px;
+  line-height: 1.48;
+  letter-spacing: 0.84px;
+  text-align: left;
+  color: #111111;
+}
+.about-us .about-us-body .about-us-body-left ol {
+  flex-wrap: wrap-reverse;
+  flex-direction: row-reverse;
+  display: inline-flex;
+  counter-reset: year 2013;
+  list-style-position: outside;
+}
+.about-us .about-us-body .about-us-body-left ol li {
+  margin-top: 35px;
+  font-family: Open Sans;
+  font-size: 16px;
+  line-height: 1.31;
+  letter-spacing: 0.64px;
+  text-align: left;
+  color: #111111;
+}
+.about-us .about-us-body .about-us-body-left ol li::before {
+  display: inline-block;
+  vertical-align: middle;
+  float: left;
+  margin-right: 48px;
+  content: counter(year) "-";
+  counter-increment: year;
+  font-family: Open Sans;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.84px;
+  text-align: left;
+  color: #111111;
+}
+.about-us .about-us-body .about-us-body-right {
+  width: 490px;
+}
+.about-us .about-us-body .about-us-body-right h4 {
+  margin-bottom: 35px;
+  font-family: Playfair Display;
+  font-size: 21px;
+  line-height: 1.48;
+  letter-spacing: 0.84px;
+  text-align: left;
+  color: #111111;
+}
+.about-us .about-us-body .about-us-body-right p {
+  font-family: Open Sans;
+  font-size: 14px;
+  line-height: 2.21;
+  letter-spacing: 0.56px;
+  text-align: left;
+  color: #666666;
 }
 
 /*# sourceMappingURL=style.css.map */
