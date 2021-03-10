@@ -1,0 +1,123 @@
+﻿.publications {
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 1170px;
+
+    .last-publications {
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            padding-bottom: 29px;
+            width: 370px;
+            border-bottom: 3px solid #e8bf5d;
+            
+            .article-img {
+                width: 370px;
+                height: 300px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            h4 {
+                margin-top: 30px;
+                font-family: Playfair Display;
+                font-size: 21px;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1;
+                letter-spacing: 0.84px;
+                text-align: left;
+                color: #111111;
+            }
+
+            .author-date {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 10px;
+
+                h5 {
+                    margin: 0;
+                    font-family: Open Sans;
+                    font-size: 16px;
+                    line-height: 1;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    letter-spacing: 0.64px;
+                    color: #111111;
+                }
+
+                h5::before, .date {
+                    font-family: Open Sans;
+                    font-size: 16px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    font-style: italic;
+                    line-height: 1;
+                    letter-spacing: 0.64px;
+                    color: #666666;
+                }
+
+                h5::before {
+                    content: "By ";
+                }
+            }
+
+            p {
+                margin-top: 38px;
+                font-family: Open Sans;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 2.21;
+                letter-spacing: 0.56px;
+                text-align: left;
+                color: #666666;
+            }
+
+            .comments-share {
+                margin-top: 39px;
+                display: flex;
+                justify-content: space-between;
+
+                a {
+                    position: relative;
+                    font-family: Open Sans;
+                    font-size: 16px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1;
+                    letter-spacing: 0.64px;
+                    color: #111111;
+                }
+            }
+
+            .comments::before {
+                content: "";
+                background-image: url(../img/comments.png);
+                margin-right: 8px;
+                float: left;
+                background-size: cover;
+                height: 16px;
+                width: 18px;
+            }
+
+            .share::before {
+                content: "";
+                background-image: url(../img/share.png);
+                margin-right: 8px;
+                float: left;
+                background-size: cover;
+                height: 16px;
+                width: 18px;
+            }
+        }
+    }
+}
