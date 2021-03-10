@@ -650,4 +650,53 @@ button:active {
   height: 363px;
 }
 
+.main-footer {
+  background-color: black;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.main-footer .footer-body {
+  margin: 0 auto;
+  width: 1100px;
+  height: 17px;
+  display: flex;
+  justify-content: space-between;
+}
+.main-footer .footer-body a {
+  font-family: Open sans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: white;
+}
+.main-footer .footer-body a::before {
+  content: "Copyright © ";
+  font-family: Open sans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #b5b5b5;
+}
+.main-footer .footer-body ul {
+  display: flex;
+  justify-content: space-between;
+  width: 113px;
+}
+.main-footer .footer-body ul li a .logo {
+  width: 17px;
+  height: 17px;
+}
+.main-footer .footer-body ul li a .logo img {
+  width: 100%;
+}
+.main-footer .footer-body ul li a::before {
+  content: none;
+}
+
 /*# sourceMappingURL=style.css.map */
