@@ -1,4 +1,8 @@
-﻿a {
+﻿body {
+    counter-reset: section;
+}
+
+a {
     text-decoration: none;
     cursor: pointer;
 }

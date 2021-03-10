@@ -132,6 +132,10 @@ select {
     scroll-behavior: auto !important;
   }
 }
+body {
+  counter-reset: section;
+}
+
 a {
   text-decoration: none;
   cursor: pointer;
@@ -211,6 +215,8 @@ button:active {
   border-left: 2px solid #e8bf5d;
 }
 .about-us-header h3, .product-header h3, .team-header h3, .clients-header h3, .publications-header h3, .question-header h3, .contact-header h3 {
+  position: relative;
+  z-index: 2;
   margin-bottom: 29px;
   font-family: Playfair Display;
   font-size: 31px;
@@ -223,6 +229,8 @@ button:active {
   color: #111111;
 }
 .about-us-header p, .product-header p, .team-header p, .clients-header p, .publications-header p, .question-header p, .contact-header p {
+  position: relative;
+  z-index: 2;
   width: 762px;
   font-family: PlayfairDisplay;
   font-size: 21px;
@@ -233,6 +241,45 @@ button:active {
   letter-spacing: 0.84px;
   text-align: left;
   color: #666666;
+}
+
+.product-header h3, .clients-header h3, .question-header h3 {
+  color: #ffffff;
+}
+.product-header p, .clients-header p, .question-header p {
+  color: #b9b9b9;
+}
+
+.about-us-header::before, .team-header::before, .publications-header::before, .contact-header::before {
+  counter-increment: section;
+  content: "0" counter(section);
+  position: absolute;
+  z-index: 1;
+  font-family: Open Sans;
+  font-size: 194.5px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.5;
+  letter-spacing: 7.78px;
+  text-align: left;
+  color: #f3f3f3;
+}
+
+.product-header::before, .clients-header::before, .question-header::before {
+  counter-increment: section;
+  content: "0" counter(section);
+  position: absolute;
+  z-index: 1;
+  font-family: Open Sans;
+  font-size: 194.5px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.5;
+  letter-spacing: 7.78px;
+  text-align: left;
+  color: #171717;
 }
 
 .about-us {
@@ -316,12 +363,6 @@ button:active {
   padding-top: 100px;
   padding-bottom: 100px;
   width: 1100px;
-}
-.product .product-inf .product-header h3 {
-  color: #ffffff;
-}
-.product .product-inf .product-header p {
-  color: #b9b9b9;
 }
 .product .product-inf .product-body {
   margin: 0 auto;
@@ -409,12 +450,6 @@ button:active {
   padding-top: 100px;
   padding-bottom: 100px;
   width: 1100px;
-}
-.clients .clients-inf .clients-header h3 {
-  color: #ffffff;
-}
-.clients .clients-inf .clients-header p {
-  color: #b9b9b9;
 }
 .clients .clients-inf .clients-body {
   display: flex;
@@ -572,12 +607,6 @@ button:active {
   padding-top: 100px;
   padding-bottom: 170px;
   width: 1070px;
-}
-.question .question-inf .question-header h3 {
-  color: #ffffff;
-}
-.question .question-inf .question-header p {
-  color: #b9b9b9;
 }
 .question .question-inf .question-body p {
   padding: 46px 47px 66px;
