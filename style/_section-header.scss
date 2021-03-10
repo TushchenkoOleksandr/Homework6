@@ -3,7 +3,6 @@
     padding: 0 0 0 19px;
     border-left: 2px solid #e8bf5d;
 
-
     h3 {
         position: relative;
         z-index: 2;
@@ -18,8 +17,6 @@
         text-align: left;
         color: #111111;
     }
-
-
 
     p {
         position: relative;
@@ -48,7 +45,7 @@
 }
 
 
-.about-us-header::before, .team-header::before, .publications-header::before, .contact-header::before {
+.about-us-header::before, .team-header::before, .publications-header::before, .contact-header::before, .product-header::before, .clients-header::before, .question-header::before {
     counter-increment: section;
     content: '0'counter(section);
     position: absolute;
@@ -58,24 +55,12 @@
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 0.5;
+    line-height: 0.55;
     letter-spacing: 7.78px;
     text-align: left;
     color: #f3f3f3;
 }
 
-.product-header::before, .clients-header::before, .question-header::before,{
-    counter-increment: section;
-    content: '0'counter(section);
-    position: absolute;
-    z-index: 1;
-    font-family: Open Sans;
-    font-size: 194.5px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.5;
-    letter-spacing: 7.78px;
-    text-align: left;
+.product-header::before, .clients-header::before, .question-header::before {
     color: #171717;
 }

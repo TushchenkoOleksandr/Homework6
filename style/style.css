@@ -250,7 +250,7 @@ button:active {
   color: #b9b9b9;
 }
 
-.about-us-header::before, .team-header::before, .publications-header::before, .contact-header::before {
+.about-us-header::before, .team-header::before, .publications-header::before, .contact-header::before, .product-header::before, .clients-header::before, .question-header::before {
   counter-increment: section;
   content: "0" counter(section);
   position: absolute;
@@ -260,25 +260,13 @@ button:active {
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: 0.5;
+  line-height: 0.55;
   letter-spacing: 7.78px;
   text-align: left;
   color: #f3f3f3;
 }
 
 .product-header::before, .clients-header::before, .question-header::before {
-  counter-increment: section;
-  content: "0" counter(section);
-  position: absolute;
-  z-index: 1;
-  font-family: Open Sans;
-  font-size: 194.5px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 0.5;
-  letter-spacing: 7.78px;
-  text-align: left;
   color: #171717;
 }
 
@@ -303,34 +291,28 @@ button:active {
   text-align: left;
   color: #111111;
 }
-.about-us .about-us-body .about-us-body-left ol {
-  flex-wrap: wrap-reverse;
-  flex-direction: row-reverse;
-  display: inline-flex;
-  counter-reset: year 2013;
-  list-style-position: outside;
-}
-.about-us .about-us-body .about-us-body-left ol li {
+.about-us .about-us-body .about-us-body-left dl .box-dl {
   margin-top: 35px;
+}
+.about-us .about-us-body .about-us-body-left dl .box-dl dt {
+  padding-top: 17px;
+  margin-right: 48px;
+  font-family: Open Sans;
+  font-size: 21px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.84px;
+  text-align: left;
+  color: #111111;
+  float: left;
+}
+.about-us .about-us-body .about-us-body-left dl .box-dl dd {
   font-family: Open Sans;
   font-size: 16px;
   line-height: 1.31;
   letter-spacing: 0.64px;
-  text-align: left;
-  color: #111111;
-}
-.about-us .about-us-body .about-us-body-left ol li::before {
-  display: inline-block;
-  vertical-align: middle;
-  float: left;
-  margin-right: 48px;
-  content: counter(year) "-";
-  counter-increment: year;
-  font-family: Open Sans;
-  font-size: 21px;
-  font-weight: bold;
-  line-height: 1;
-  letter-spacing: 0.84px;
   text-align: left;
   color: #111111;
 }
