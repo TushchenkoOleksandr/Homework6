@@ -9,7 +9,6 @@
 
         .product-body {
             margin: 0 auto;
-            border: 2px solid white;
             width: 990px;
 
             ul {
@@ -22,7 +21,9 @@
                 }
 
                 li {
-                    width: 435px;
+                    position: relative;
+                    padding-left: 90px;
+                    width: 450px;
 
                     h4 {
                         margin-bottom: 32px;
@@ -48,6 +49,42 @@
                         text-align: left;
                         color: #ffffff;
                     }
+                }
+
+                li::before {
+                    content: '';
+                    background-image: url(../img/heands.png);
+                    position: absolute;
+                    left: 0px;
+                    width: 58px;
+                    height: 38px;
+                }
+
+                li + li::before {
+                    content: '';
+                    background-image: url(../img/wrench.png);
+                    position: absolute;
+                    left: 0px;
+                    width: 42px;
+                    height: 42px;
+                }
+
+                li + li + li::before {
+                    content: '';
+                    background-image: url(../img/monitor.png);
+                    position: absolute;
+                    left: 0px;
+                    width: 49px;
+                    height: 43px;
+                }
+
+                li + li + li + li::before {
+                    content: '';
+                    background-image: url(../img/house.png);
+                    position: absolute;
+                    left: 0px;
+                    width: 42px;
+                    height: 33px;
                 }
             }
         }

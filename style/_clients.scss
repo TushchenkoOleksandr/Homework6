@@ -23,30 +23,44 @@
                 }
             }
 
-            p {
-                width: 600px;
-                font-family: Open Sans;
-                font-size: 14px;
-                font-weight: normal;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: 2.21;
-                letter-spacing: 0.56px;
-                text-align: left;
-                color: #ffffff;
+            .say-text::before {
+                content: '';
+                position: absolute;
+                left: -43px;
+                background-image: url(../img/arow.png);
+                background-size: cover;
+                width: 30px;
+                height: 25px;
             }
 
-            h4 {
-                margin-top: 40px;
-                font-family: Playfair Display;
-                font-size: 21px;
-                font-weight: normal;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: 1.48;
-                letter-spacing: 0.84px;
-                text-align: left;
-                color: #ffffff
+            .say-text {
+                position: relative;
+
+                p {
+                    width: 600px;
+                    font-family: Open Sans;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 2.21;
+                    letter-spacing: 0.56px;
+                    text-align: left;
+                    color: #ffffff;
+                }
+
+                h4 {
+                    margin-top: 40px;
+                    font-family: Playfair Display;
+                    font-size: 21px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.48;
+                    letter-spacing: 0.84px;
+                    text-align: left;
+                    color: #ffffff
+                }
             }
         }
     }
