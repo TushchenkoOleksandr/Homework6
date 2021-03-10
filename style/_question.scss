@@ -1,0 +1,39 @@
+﻿.question {
+    background-color: black;
+
+    .question-inf {
+        margin: 0 auto;
+        padding-top: 100px;
+        padding-bottom: 170px;
+        width: 1070px;
+
+
+        .question-header {
+            h3 {
+                color: #ffffff;
+            }
+
+            p {
+                color: #b9b9b9;
+            }
+        }
+
+        .question-body {
+
+            p {
+                padding: 46px 47px 66px;
+                width: 500px;
+                background-color: #e8bf5d;
+                font-family: Open Sans;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 2.21;
+                letter-spacing: 0.56px;
+                text-align: left;
+                color: #111111;
+            }
+        }
+    }
+}
